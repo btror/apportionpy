@@ -10,14 +10,8 @@ def calculate_jefferson(num_seats, populations):
     and modified divisor.
     """
 
-    # The number of seats to apportion.
-    num_seats = num_seats
-
     # The number of states to apportion seats to.
     num_states = len(populations)
-
-    # The populations for each state respectively.
-    populations = populations
 
     # The original divisor.
     original_divisor = sum(populations) / num_seats
@@ -89,7 +83,7 @@ def calculate_jefferson(num_seats, populations):
 
     # If the loop didn't naturally end, return null values.
     if time_keeper == 5000:
-        return None, None, None, None, None, None
+        raise Exception("Incalculable values.")
 
     # Return a list for final fair shares and final quotas.
     else:

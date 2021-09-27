@@ -10,26 +10,20 @@ def calculate_hamilton(num_seats, populations):
     and modified divisor.
     """
 
-    # The number of seats to apportion.
-    num_seats = num_seats
-
     # The number of states to apportion seats to.
     num_states = len(populations)
 
-    # The populations for each state respectively.
-    populations = populations
-
     # The original divisor.
-    original_divisor = sum(populations) / num_seats
+    initial_divisor = sum(populations) / num_seats
 
     # The original state quotas respectively.
-    original_quotas = []
+    initial_quotas = []
     for i, population in enumerate(populations):
-        original_quotas.append(population / original_divisor)
+        initial_quotas.append(population / initial_divisor)
 
     # The initial state fair shares respectively.
     initial_fair_shares = []
-    for i, quota in enumerate(original_quotas):
+    for i, quota in enumerate(initial_quotas):
         initial_fair_shares.append(math.floor(quota))
 
     # Initialize the final quota and original quota list values.
@@ -45,14 +39,14 @@ def calculate_hamilton(num_seats, populations):
     # At this point, the final quotas list is the same as the original quotas list.
     for i, population in enumerate(populations):
         final_quotas.append(population / modified_divisor)
-        decimal_list.append(math.modf(population / original_divisor)[0])
+        decimal_list.append(math.modf(population / initial_divisor)[0])
 
     # Initialize the final fair shares list to list of zeros.
     final_fair_shares = [0] * num_states
 
     # Calculate the original quota values.
     # At this point, the final quotas list is the same as the original quotas list.
-    for i, quota in enumerate(original_quotas):
+    for i, quota in enumerate(initial_quotas):
         final_fair_shares[i] = math.floor(quota)
 
     # Initialize a time keeper to break from the loop if apportionment is impossible.
@@ -71,8 +65,8 @@ def calculate_hamilton(num_seats, populations):
 
     # If the loop didn't naturally end, return null values.
     if time_keeper == 5000:
-        return None, None, None, None, None, None
+        raise Exception("Incalculable values.")
 
     # Return a list for final fair shares and final quotas.
     else:
-        return initial_fair_shares, final_fair_shares, original_quotas, final_quotas, original_divisor, modified_divisor
+        return initial_fair_shares, final_fair_shares, initial_quotas, final_quotas, initial_divisor, modified_divisor

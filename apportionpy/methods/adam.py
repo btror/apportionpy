@@ -6,15 +6,20 @@ def calculate_adam(num_seats, populations):
     Calculate the initial fair shares, final fair shares, initial quotas, final quotas, initial divisor, and modified
     divisor using Adam's method of apportionment.
 
-    :return: A list of initial fair shares, final fair shares, initial quotas, final quotas, initial divisor, and modified divisor.
+    :return: A list of initial fair shares, final fair shares, initial quotas, final quotas, initial divisor, 
+    and modified divisor. 
     """
 
+    # The number of states to apportion to.
     num_states = len(populations)
-    original_divisor = sum(populations) / num_seats
+
+    # The initial divisor
+    initial_divisor = sum(populations) / num_seats
+    
     # The original state quotas respectively.
     original_quotas = []
     for i, population in enumerate(populations):
-        original_quotas.append(population / original_divisor)
+        original_quotas.append(population / initial_divisor)
 
     # The initial state fair shares respectively.
     initial_fair_shares = []
@@ -78,8 +83,8 @@ def calculate_adam(num_seats, populations):
 
     # If the loop didn't naturally end, return null values.
     if time_keeper == 5000:
-        return None, None, None, None, None, None
+        raise Exception("Incalculable values.")
 
     # Return a list for final fair shares, final quotas and a value for the modified divisor.
     else:
-        return initial_fair_shares, final_fair_shares, original_quotas, final_quotas, original_divisor, modified_divisor
+        return initial_fair_shares, final_fair_shares, original_quotas, final_quotas, initial_divisor, modified_divisor

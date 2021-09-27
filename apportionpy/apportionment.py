@@ -35,3 +35,6 @@ class Apportion:
         elif method.upper() == "WEBSTER":
             self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
             self.initial_divisor, self.modified_divisor = calculate_webster(self.seats, self.populations)
+        else:
+            error_message = "\"" + method + "\" is not a valid method."
+            raise Exception(error_message)
