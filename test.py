@@ -1,4 +1,4 @@
-import apportionpy.apportion as ap
+import apportionpy.apportionment as ap
 
 x = ap.Apportion(seats=10, populations=[23, 35, 10, 32, 19], method="jefferson")
 
