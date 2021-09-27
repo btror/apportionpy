@@ -1,4 +1,3 @@
-
 def calculate_webster(num_seats, populations):
     """
     Calculate the initial fair shares, final fair shares, initial quotas, final quotas, initial divisor, and modified
