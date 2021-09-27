@@ -14,16 +14,16 @@ def calculate_jefferson(num_seats, populations):
     num_states = len(populations)
 
     # The original divisor.
-    original_divisor = sum(populations) / num_seats
+    initial_divisor = sum(populations) / num_seats
 
     # The original state quotas respectively.
-    original_quotas = []
+    initial_quotas = []
     for i, population in enumerate(populations):
-        original_quotas.append(population / original_divisor)
+        initial_quotas.append(population / initial_divisor)
 
     # The initial state fair shares respectively.
     initial_fair_shares = []
-    for i, quota in enumerate(original_quotas):
+    for i, quota in enumerate(initial_quotas):
         initial_fair_shares.append(math.floor(quota))
 
     # Initialize the final quota and original quota list values.
@@ -51,7 +51,7 @@ def calculate_jefferson(num_seats, populations):
     while sum(final_fair_shares) != num_seats:
         if time_keeper == 5000:
             break
-        for i, quota in enumerate(original_quotas):
+        for i, quota in enumerate(initial_quotas):
             final_fair_shares[i] = math.floor(final_quotas[i])
 
         # Recalculate the divisor if the seats are not fully apportioned.
@@ -77,7 +77,7 @@ def calculate_jefferson(num_seats, populations):
                 final_quotas[i] = population / modified_divisor
 
             # Reapportion the seats to states given a set of new quotas.
-            for i, quota in enumerate(original_quotas):
+            for i, quota in enumerate(initial_quotas):
                 final_fair_shares[i] = math.floor(final_quotas[i])
         time_keeper += 1
 
@@ -87,4 +87,4 @@ def calculate_jefferson(num_seats, populations):
 
     # Return a list for final fair shares and final quotas.
     else:
-        return initial_fair_shares, final_fair_shares, original_quotas, final_quotas, original_divisor, modified_divisor
+        return initial_fair_shares, final_fair_shares, initial_quotas, final_quotas, initial_divisor, modified_divisor
