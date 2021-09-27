@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c4e527f-4c53-4408-b411-d67587e9efb5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yj4z5DfRobrX70WLuyYHFT1FSV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ticer\Desktop\dev\apportionpy\apportionpy" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="apportion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="apportionpy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apportionpy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apportionpy/apportion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.apportion" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c4e527f-4c53-4408-b411-d67587e9efb5" name="Default Changelist" comment="" />
+      <created>1632751922136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632751922136</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1790" height="295" key="GridCell.Tab.0.bottom" timestamp="1632754687499">
+      <screen x="109" y="0" width="1811" height="1080" />
+    </state>
+    <state width="1790" height="295" key="GridCell.Tab.0.bottom/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.center" timestamp="1632754687499">
+      <screen x="109" y="0" width="1811" height="1080" />
+    </state>
+    <state width="1790" height="295" key="GridCell.Tab.0.center/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.left" timestamp="1632754687499">
+      <screen x="109" y="0" width="1811" height="1080" />
+    </state>
+    <state width="1790" height="295" key="GridCell.Tab.0.left/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.right" timestamp="1632754687499">
+      <screen x="109" y="0" width="1811" height="1080" />
+    </state>
+    <state width="1790" height="295" key="GridCell.Tab.0.right/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+  </component>
+</project>
