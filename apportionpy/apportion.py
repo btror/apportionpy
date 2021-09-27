@@ -1,13 +1,27 @@
 from apportionpy.methods.adam import Adam
-from apportionpy.methods import hamilton
-from apportionpy.methods import jefferson
-from apportionpy.methods import webster
+from apportionpy.methods.jefferson import Jefferson
+from apportionpy.methods.webster import Webster
+from apportionpy.methods.hamilton import Hamilton
 
-method = Adam(10, [10, 23, 40])
-print("initial fair shares:",method.initial_fair_shares)
-print("original quotas:", method.original_quotas)
-print("original divisor:", method.original_divisor)
-method.calculate()
-print("initial fair shares:",method.initial_fair_shares)
-print("original quotas:", method.original_quotas)
-print("original divisor:", method.original_divisor)
+
+class Apportion:
+    def __init__(self, seats, populations, method):
+        self.seats = seats
+        self.populations = populations
+        self.method = method.lower()
+
+        ap = None
+        if method.upper() == "ADAM":
+            ap = Adam(self.seats, self.populations)
+        elif method.upper() == "HAMILTON":
+            ap = Hamilton(self.seats, self.populations)
+        elif method.upper() == "JEFFERSON":
+            ap = Jefferson(self.seats, self.populations)
+        elif method.upper() == "WEBSTER":
+            ap = Webster(self.seats, self.populations)
+
+        self.final_fair_shares, self.final_quotas, self.modified_divisor = ap.calculate()
+
+        self.initial_fair_shares = ap.initial_fair_shares
+        self.initial_quotas = ap.original_quotas
+        self.initial_divisor = ap.original_divisor

@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c4e527f-4c53-4408-b411-d67587e9efb5" name="Default Changelist" comment="" />
+    <list default="true" id="3c4e527f-4c53-4408-b411-d67587e9efb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/apportion.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/apportion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/hamilton.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/hamilton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/jefferson.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/jefferson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/webster.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/webster.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,22 +41,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1yj4z5DfRobrX70WLuyYHFT1FSV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apportion-py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ticer\Desktop\dev\apportionpy\apportionpy" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test">
     <configuration name="apportion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="apportionpy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,24 +82,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="apportionpy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.apportion" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -82,22 +124,41 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1790" height="295" key="GridCell.Tab.0.bottom" timestamp="1632754687499">
-      <screen x="109" y="0" width="1811" height="1080" />
+    <state x="1500" y="454" key="FileChooserDialogImpl" timestamp="1632764410281">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1500" y="454" key="FileChooserDialogImpl/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632764410281" />
+    <state width="3419" height="401" key="GridCell.Tab.0.bottom" timestamp="1632766719731">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1790" height="295" key="GridCell.Tab.0.bottom/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
-    <state width="1790" height="295" key="GridCell.Tab.0.center" timestamp="1632754687499">
-      <screen x="109" y="0" width="1811" height="1080" />
+    <state width="3419" height="401" key="GridCell.Tab.0.bottom/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
+    <state width="3419" height="401" key="GridCell.Tab.0.center" timestamp="1632766719731">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1790" height="295" key="GridCell.Tab.0.center/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
-    <state width="1790" height="295" key="GridCell.Tab.0.left" timestamp="1632754687499">
-      <screen x="109" y="0" width="1811" height="1080" />
+    <state width="3419" height="401" key="GridCell.Tab.0.center/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
+    <state width="3419" height="401" key="GridCell.Tab.0.left" timestamp="1632766719731">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1790" height="295" key="GridCell.Tab.0.left/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
-    <state width="1790" height="295" key="GridCell.Tab.0.right" timestamp="1632754687499">
-      <screen x="109" y="0" width="1811" height="1080" />
+    <state width="3419" height="401" key="GridCell.Tab.0.left/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
+    <state width="3419" height="401" key="GridCell.Tab.0.right" timestamp="1632766719731">
+      <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="1790" height="295" key="GridCell.Tab.0.right/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="3419" height="401" key="GridCell.Tab.0.right/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
   </component>
 </project>

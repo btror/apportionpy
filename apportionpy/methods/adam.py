@@ -36,6 +36,12 @@ class Adam:
             self.initial_fair_shares.append(math.ceil(quota))
 
     def calculate(self):
+        """
+        Calculate final fair shares, final quotas, and the modified divisor.
+
+        :return: A list for the final fair shares, final quotas, and a value for the modified divisor.
+        """
+
         # Initialize the final quota and original quota list values.
         final_quotas = []
 
@@ -89,10 +95,12 @@ class Adam:
                 # Reapportion the seats to states given a set of new quotas.
                 for i, quota in enumerate(self.original_quotas):
                     final_fair_shares[i] = math.ceil(final_quotas[i])
-                    # self.initial_fair_shares[i] = math.ceil(quota)
             time_keeper += 1
 
+        # If the loop didn't naturally end, return null values.
         if time_keeper == 5000:
-            return None, None, None, None
+            return None, None, None
+
+        # Return a list for final fair shares, final quotas and a value for the modified divisor.
         else:
-            return final_fair_shares, final_quotas, modified_divisor, estimator
+            return final_fair_shares, final_quotas, modified_divisor
