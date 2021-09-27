@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3c4e527f-4c53-4408-b411-d67587e9efb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apportionpy/apportion.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/apportionment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/apportionment.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/apportionment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/adam.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/adam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/hamilton.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/hamilton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/jefferson.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/jefferson.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apportionpy/methods/webster.py" beforeDir="false" afterPath="$PROJECT_DIR$/apportionpy/methods/webster.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +109,19 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -124,7 +140,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -135,25 +153,25 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1500" y="454" key="FileChooserDialogImpl/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632764410281" />
-    <state width="3419" height="401" key="GridCell.Tab.0.bottom" timestamp="1632766719731">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1790" height="295" key="GridCell.Tab.0.bottom" timestamp="1632773780113">
+      <screen x="109" y="0" width="1811" height="1080" />
     </state>
-    <state width="1790" height="295" key="GridCell.Tab.0.bottom/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.bottom/109.0.1811.1080@109.0.1811.1080" timestamp="1632773780113" />
     <state width="3419" height="401" key="GridCell.Tab.0.bottom/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
-    <state width="3419" height="401" key="GridCell.Tab.0.center" timestamp="1632766719731">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1790" height="295" key="GridCell.Tab.0.center" timestamp="1632773780112">
+      <screen x="109" y="0" width="1811" height="1080" />
     </state>
-    <state width="1790" height="295" key="GridCell.Tab.0.center/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.center/109.0.1811.1080@109.0.1811.1080" timestamp="1632773780112" />
     <state width="3419" height="401" key="GridCell.Tab.0.center/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
-    <state width="3419" height="401" key="GridCell.Tab.0.left" timestamp="1632766719731">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1790" height="295" key="GridCell.Tab.0.left" timestamp="1632773780112">
+      <screen x="109" y="0" width="1811" height="1080" />
     </state>
-    <state width="1790" height="295" key="GridCell.Tab.0.left/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.left/109.0.1811.1080@109.0.1811.1080" timestamp="1632773780112" />
     <state width="3419" height="401" key="GridCell.Tab.0.left/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
-    <state width="3419" height="401" key="GridCell.Tab.0.right" timestamp="1632766719731">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1790" height="295" key="GridCell.Tab.0.right" timestamp="1632773780112">
+      <screen x="109" y="0" width="1811" height="1080" />
     </state>
-    <state width="1790" height="295" key="GridCell.Tab.0.right/109.0.1811.1080@109.0.1811.1080" timestamp="1632754687499" />
+    <state width="1790" height="295" key="GridCell.Tab.0.right/109.0.1811.1080@109.0.1811.1080" timestamp="1632773780112" />
     <state width="3419" height="401" key="GridCell.Tab.0.right/3440.0.2560.1040/0.0.3440.1400@0.0.3440.1400" timestamp="1632766719731" />
   </component>
 </project>

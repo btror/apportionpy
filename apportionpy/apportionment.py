@@ -1,27 +1,37 @@
-from apportionpy.methods.adam import Adam
-from apportionpy.methods.jefferson import Jefferson
-from apportionpy.methods.webster import Webster
-from apportionpy.methods.hamilton import Hamilton
+from apportionpy.methods.adam import calculate_adam
+from apportionpy.methods.hamilton import calculate_hamilton
+from apportionpy.methods.jefferson import calculate_jefferson
+from apportionpy.methods.webster import calculate_webster
 
 
 class Apportion:
     def __init__(self, seats, populations, method):
+        """
+        Initialize variables.
+
+        :param seats: Amount of seats to apportion.
+        :type seats: int
+
+        :param populations: The populations of each state respectively.
+        :type populations: [float]
+
+        :param method: The apportioning method to be used.
+        :type method: str
+        """
+
         self.seats = seats
         self.populations = populations
         self.method = method.lower()
 
-        ap = None
         if method.upper() == "ADAM":
-            ap = Adam(self.seats, self.populations)
+            self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
+            self.initial_divisor, self.modified_divisor = calculate_adam(self.seats, self.populations)
         elif method.upper() == "HAMILTON":
-            ap = Hamilton(self.seats, self.populations)
+            self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
+            self.initial_divisor, self.modified_divisor = calculate_hamilton(self.seats, self.populations)
         elif method.upper() == "JEFFERSON":
-            ap = Jefferson(self.seats, self.populations)
+            self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
+            self.initial_divisor, self.modified_divisor = calculate_jefferson(self.seats, self.populations)
         elif method.upper() == "WEBSTER":
-            ap = Webster(self.seats, self.populations)
-
-        self.final_fair_shares, self.final_quotas, self.modified_divisor = ap.calculate()
-
-        self.initial_fair_shares = ap.initial_fair_shares
-        self.initial_quotas = ap.original_quotas
-        self.initial_divisor = ap.original_divisor
+            self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
+            self.initial_divisor, self.modified_divisor = calculate_webster(self.seats, self.populations)
