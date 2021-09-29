@@ -24,6 +24,7 @@ Package structure
     * calculate_jefferson
     * calculate_webster
     * calculate_huntington_hill
+    * calculate_equal_proportions
 
 Examples
 --------

@@ -1,10 +1,52 @@
 from setuptools import setup, find_packages
 
-VERSION = "0.0.1"
+VERSION = "0.2.0"
 DESCRIPTION = "A Python package for apportionment."
-LONG_DESCRIPTION = "A package that allows users to apportion seats to states based on population figures. Initial " \
-                   "fair shares, final fair shares, initial quotas, final quotas, initial divisors, and modified " \
-                   "divisors are calculated."
+LONG_DESCRIPTION = "A package that allows users to apportion seats to states based on population figures.\n\n" \
+                   "This apportionment package calculates results for the following methods:\n" \
+                   " - Hamilton's method\n" \
+                   " - Jefferson's method\n" \
+                   " - Adam's method\n" \
+                   " - Webster's method\n" \
+                   " - Huntington Hill's method\n" \
+                   " - Method of equal proportions\n\n" \
+                   "Hamilton's method calculations:\n" \
+                   " - fair shares\n" \
+                   " - initial fair shares\n" \
+                   " - initial quotas\n" \
+                   " - final quotas\n" \
+                   " - initial divisor\n" \
+                   " - modified divisor\n\n" \
+                   "Jefferson's method calculations:\n" \
+                   " - fair shares\n" \
+                   " - initial fair shares\n" \
+                   " - initial quotas\n" \
+                   " - final quotas\n" \
+                   " - initial divisor\n" \
+                   " - modified divisor\n\n" \
+                   "Adam's method calculations:\n" \
+                   " - fair shares\n" \
+                   " - initial fair shares\n" \
+                   " - initial quotas\n" \
+                   " - final quotas\n" \
+                   " - initial divisor\n" \
+                   " - modified divisor\n\n" \
+                   "Webster's method calculations:\n" \
+                   " - fair shares\n" \
+                   " - initial fair shares\n" \
+                   " - initial quotas\n" \
+                   " - final quotas\n" \
+                   " - initial divisor\n" \
+                   " - modified divisor\n\n" \
+                   "Huntington Hill's method calculations:\n" \
+                   " - fair shares\n" \
+                   " - initial fair shares\n" \
+                   " - initial quotas\n" \
+                   " - final quotas\n" \
+                   " - initial divisor\n" \
+                   " - modified divisor\n\n" \
+                   "Method of equal proportions calculations:\n" \
+                   " - fair shares\n" \
 
 # Setting up
 setup(
@@ -17,7 +59,8 @@ setup(
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
     install_requires=[],
-    keywords=["python", "apportionment", "apportion", "hamilton", "webster", "adam", "jefferson", "method"],
+    keywords=["python", "apportionment", "apportion", "hamilton", "webster", "adam", "jefferson", "Huntington",
+              "method"],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
