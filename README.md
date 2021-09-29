@@ -10,6 +10,8 @@ The ``apportionpy`` package works in Python 3. It is available on pypi and can b
 
     pip install apportionpy
 
+pypi link -> https://pypi.org/project/apportionpy/
+
 Package structure
 -----------------
 
