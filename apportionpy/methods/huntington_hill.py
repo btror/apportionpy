@@ -4,10 +4,10 @@ import math
 def calculate_huntington_hill(num_seats, populations):
     """
     Calculate the initial fair shares, final fair shares, initial quotas, final quotas, initial divisor, and modified
-    divisor using Webster's method of apportionment.
+    divisor using Huntington Hill's method of apportionment.
 
-    :return: A list of initial fair shares, final fair shares, initial quotas, final quotas, initial divisor,
-    and modified divisor.
+    :return: A list of initial fair shares, final fair shares, initial quotas, final quotas, initial geometric means,
+    final geometric means, initial divisor, and modified divisor.
     """
 
     # The number of states to apportion seats to.
