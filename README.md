@@ -23,6 +23,7 @@ Package structure
     * calculate_hamilton
     * calculate_jefferson
     * calculate_webster
+    * calculate_huntington_hill
 
 Examples
 --------
