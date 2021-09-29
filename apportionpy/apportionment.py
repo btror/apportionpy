@@ -2,6 +2,7 @@ from apportionpy.methods.adam import calculate_adam
 from apportionpy.methods.hamilton import calculate_hamilton
 from apportionpy.methods.jefferson import calculate_jefferson
 from apportionpy.methods.webster import calculate_webster
+from apportionpy.methods.huntington_hill import calculate_huntington_hill
 
 
 class Apportion:
@@ -35,6 +36,10 @@ class Apportion:
         elif method.upper() == "WEBSTER":
             self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
             self.initial_divisor, self.modified_divisor = calculate_webster(self.seats, self.populations)
+        elif method.upper() == "HUNTINGTON HILL" or method.upper() == "HHILL":
+            self.initial_fair_shares, self.final_fair_shares, self.initial_quotas, self.final_quotas, \
+            self.initial_geometric_means, self.final_geometric_means, self.initial_divisor, self.modified_divisor \
+                = calculate_huntington_hill(self.seats, self.populations)
         else:
             error_message = "\"" + method + "\" is not a valid method."
             raise Exception(error_message)

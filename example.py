@@ -1,7 +1,19 @@
 import apportionpy.apportionment as ap
 
-seats = 10
-populations = [100, 120, 113, 199, 144]
+seats = 70
+populations = [300500, 200000, 50000, 38000, 21500]
+
+# Huntington Hill method of apportionment.
+method_huntington_hill = ap.Apportion(seats=seats, populations=populations, method="huntington hill")
+print("\n->", method_huntington_hill.method,
+      "\ninitial fair shares", method_huntington_hill.initial_fair_shares,
+      "\nfinal fair shares", method_huntington_hill.final_fair_shares,
+      "\ninitial quotas", method_huntington_hill.initial_quotas,
+      "\nfinal quotas", method_huntington_hill.final_quotas,
+      "\ninitial geometric means", method_huntington_hill.initial_geometric_means,
+      "\nfinal geometric means", method_huntington_hill.final_geometric_means,
+      "\ninitial divisor", method_huntington_hill.initial_divisor,
+      "\nmodified divisor", method_huntington_hill.modified_divisor)
 
 # Adam's method of apportionment.
 method_adam = ap.Apportion(seats=seats, populations=populations, method="adam")
