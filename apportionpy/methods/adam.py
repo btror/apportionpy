@@ -51,8 +51,8 @@ def calculate_adam(num_seats, populations):
     while sum(final_fair_shares) != num_seats:
         if time_keeper == 5000:
             break
-        for i, quota in enumerate(initial_quotas):
-            final_fair_shares[i] = math.ceil(final_quotas[i])
+        for i, quota in enumerate(final_quotas):
+            final_fair_shares[i] = math.ceil(quota)
 
         # Recalculate the divisor if the seats are not fully apportioned.
         if sum(final_fair_shares) != num_seats:
@@ -77,8 +77,8 @@ def calculate_adam(num_seats, populations):
                 final_quotas[i] = population / modified_divisor
 
             # Reapportion the seats to states given a set of new quotas.
-            for i, quota in enumerate(initial_quotas):
-                final_fair_shares[i] = math.ceil(final_quotas[i])
+            for i, quota in enumerate(final_quotas):
+                final_fair_shares[i] = math.ceil(quota)
         time_keeper += 1
 
     # If the loop didn't naturally end, return null values.
