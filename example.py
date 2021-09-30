@@ -14,7 +14,8 @@ print("\n->", method_adam.method,
       "\ninitial geometric means", method_adam.initial_geometric_means,
       "\nfinal geometric means", method_adam.final_geometric_means,
       "\ninitial divisor", method_adam.initial_divisor,
-      "\nmodified divisor", method_adam.modified_divisor)
+      "\nmodified divisor", method_adam.modified_divisor,
+      "\ndivisor history", method_adam.divisor_history)
 
 # Hamilton's method of apportionment.
 method_hamilton = ap.Apportion(seats=seats, populations=populations, method="hamilton")
@@ -38,7 +39,8 @@ print("\n->", method_jefferson.method,
       "\ninitial geometric means", method_jefferson.initial_geometric_means,
       "\nfinal geometric means", method_jefferson.final_geometric_means,
       "\ninitial divisor", method_jefferson.initial_divisor,
-      "\nmodified divisor", method_jefferson.modified_divisor)
+      "\nmodified divisor", method_jefferson.modified_divisor,
+      "\ndivisor history", method_jefferson.divisor_history)
 
 t1 = estimate_lowest_divisor("jefferson", method_jefferson.modified_divisor, populations, seats)
 print("boundary test: ", t1)
@@ -56,7 +58,8 @@ print("\n->", method_webster.method,
       "\ninitial geometric means", method_webster.initial_geometric_means,
       "\nfinal geometric means", method_webster.final_geometric_means,
       "\ninitial divisor", method_webster.initial_divisor,
-      "\nmodified divisor", method_webster.modified_divisor)
+      "\nmodified divisor", method_webster.modified_divisor,
+      "\ndivisor history", method_webster.divisor_history)
 
 # Huntington Hill method of apportionment.
 method_huntington_hill = ap.Apportion(seats=seats, populations=populations, method="huntington hill")

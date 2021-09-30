@@ -33,19 +33,23 @@ class Apportion:
         self.modified_divisor = None
         self.initial_geometric_means = None
         self.final_geometric_means = None
+        self.divisor_history = None
 
         if method.upper() == "ADAM":
             self.initial_fair_shares, self.fair_shares, self.initial_quotas, self.final_quotas, \
-                self.initial_divisor, self.modified_divisor = calculate_adam(self.seats, self.populations)
+                self.initial_divisor, self.modified_divisor, self.divisor_history = \
+                calculate_adam(self.seats, self.populations)
         elif method.upper() == "HAMILTON":
             self.initial_fair_shares, self.fair_shares, self.initial_quotas, self.final_quotas, \
                 self.initial_divisor, self.modified_divisor = calculate_hamilton(self.seats, self.populations)
         elif method.upper() == "JEFFERSON":
             self.initial_fair_shares, self.fair_shares, self.initial_quotas, self.final_quotas, \
-                self.initial_divisor, self.modified_divisor = calculate_jefferson(self.seats, self.populations)
+                self.initial_divisor, self.modified_divisor, self.divisor_history = \
+                calculate_jefferson(self.seats, self.populations)
         elif method.upper() == "WEBSTER":
             self.initial_fair_shares, self.fair_shares, self.initial_quotas, self.final_quotas, \
-                self.initial_divisor, self.modified_divisor = calculate_webster(self.seats, self.populations)
+                self.initial_divisor, self.modified_divisor, self.divisor_history = \
+                calculate_webster(self.seats, self.populations)
         elif method.upper() == "HUNTINGTON HILL" or method.upper() == "HHILL":
             self.initial_fair_shares, self.fair_shares, self.initial_quotas, self.final_quotas, \
                 self.initial_geometric_means, self.final_geometric_means, self.initial_divisor, self.modified_divisor \

@@ -7,11 +7,15 @@ def calculate_webster(num_seats, populations):
     and modified divisor.
     """
 
+    # Record divisors.
+    estimated_divisors = []
+
     # The number of states to apportion seats to.
     num_states = len(populations)
 
     # The original divisor.
     initial_divisor = sum(populations) / num_seats
+    estimated_divisors.append(initial_divisor)
 
     # The original state quotas respectively.
     initial_quotas = []
@@ -76,6 +80,9 @@ def calculate_webster(num_seats, populations):
             # Reapportion the seats to states given a set of new quotas.
             for i, quota in enumerate(final_quotas):
                 final_fair_shares[i] = round(quota)
+
+            # Save updated divisor.
+            estimated_divisors.append(modified_divisor)
         time_keeper += 1
 
     # If the loop didn't naturally end, return null values.
@@ -84,4 +91,5 @@ def calculate_webster(num_seats, populations):
 
     # Return a list for final fair shares and final quotas.
     else:
-        return initial_fair_shares, final_fair_shares, initial_quotas, final_quotas, initial_divisor, modified_divisor
+        return initial_fair_shares, final_fair_shares, initial_quotas, final_quotas, initial_divisor, modified_divisor\
+            , estimated_divisors
