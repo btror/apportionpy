@@ -27,6 +27,11 @@ Package structure
     * calculate_webster
     * calculate_huntington_hill
     * calculate_equal_proportions
+  
+  * experimental
+  
+    * estimate_lowest_divisor
+    * estimate_highest_divisor
 
 Examples
 --------
