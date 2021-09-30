@@ -1,4 +1,5 @@
 import apportionpy.apportionment as ap
+from apportionpy.experimental.boundary import estimate_lowest_divisor, estimate_highest_divisor
 
 seats = 70
 populations = [300500, 200000, 50000, 38000, 21500]
@@ -39,6 +40,12 @@ print("\n->", method_jefferson.method,
       "\ninitial divisor", method_jefferson.initial_divisor,
       "\nmodified divisor", method_jefferson.modified_divisor)
 
+t1 = estimate_lowest_divisor("jefferson", method_jefferson.modified_divisor, populations, seats)
+print("boundary test: ", t1)
+
+t2 = estimate_highest_divisor("jefferson", method_jefferson.modified_divisor, populations, seats)
+print("boundary test: ", t2)
+
 # Webster's method of apportionment.
 method_webster = ap.Apportion(seats=seats, populations=populations, method="webster")
 print("\n->", method_webster.method,
@@ -63,7 +70,7 @@ print("\n->", method_huntington_hill.method,
       "\ninitial divisor", method_huntington_hill.initial_divisor,
       "\nmodified divisor", method_huntington_hill.modified_divisor)
 
-# Huntington Hill method of apportionment.
+# Method of equal proportions.
 method_equal_proportions = ap.Apportion(seats=seats, populations=populations, method="equal proportions")
 print("\n->", method_equal_proportions.method,
       "\ninitial fair shares", method_equal_proportions.initial_fair_shares,
