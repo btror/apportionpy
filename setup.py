@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 DESCRIPTION = "A Python package for apportionment."
 LONG_DESCRIPTION = "A package that allows users to apportion seats to states based on population figures.\n\n" \
                    "This apportionment package calculates results for the following methods:\n" \
@@ -43,10 +43,15 @@ LONG_DESCRIPTION = "A package that allows users to apportion seats to states bas
                    " - initial fair shares\n" \
                    " - initial quotas\n" \
                    " - final quotas\n" \
+                   " - initial geometric means\n" \
+                   " - final geometric means\n" \
                    " - initial divisor\n" \
                    " - modified divisor\n\n" \
                    "Method of equal proportions calculations:\n" \
-                   " - fair shares\n" \
+                   " - fair shares\n\n" \
+                   "Experimental features:\n" \
+                   " - estimate the lowest possible divisor possible\n" \
+                   " - estimate the highest possible divisor possible\n" \
 
 # Setting up
 setup(
